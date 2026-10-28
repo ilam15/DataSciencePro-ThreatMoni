@@ -1,0 +1,23 @@
+# Paper-Ready Results & Quantitative Findings
+
+## Abstract / Summary Stats
+- Dataset size: N = 1101 OSINT records
+- Mean TPI: 33.55 (SD: 9.91)
+- Top classifier: Random Forest achieved 44.34% accuracy and 0.4415 weighted F1 score.
+
+## Tabular Model Comparison
+| Model                  |   Accuracy |   Precision (Macro) |   Precision (Weighted) |   Recall (Macro) |   Recall (Weighted) |   F1 Score (Macro) |   F1 Score (Weighted) |
+|:-----------------------|-----------:|--------------------:|-----------------------:|-----------------:|--------------------:|-------------------:|----------------------:|
+| Random Forest          |     0.4434 |              0.4373 |                 0.4404 |           0.4384 |              0.4434 |             0.4374 |                0.4415 |
+| Decision Tree          |     0.4208 |              0.4163 |                 0.4192 |           0.4171 |              0.4208 |             0.4164 |                0.4197 |
+| XGBoost                |     0.4163 |              0.4123 |                 0.4153 |           0.4125 |              0.4163 |             0.4122 |                0.4156 |
+| Logistic Regression    |     0.4208 |              0.4077 |                 0.4118 |           0.4123 |              0.4208 |             0.4073 |                0.4136 |
+| Support Vector Machine |     0.4163 |              0.3801 |                 0.386  |           0.4014 |              0.4163 |             0.3788 |                0.3892 |
+| Naive Bayes            |     0.457  |              0.3167 |                 0.3272 |           0.4366 |              0.457  |             0.3578 |                0.372  |
+
+## Threat Priority Index Distribution
+| threat_priority   |   count |
+|:------------------|--------:|
+| Medium            |     801 |
+| Low               |     243 |
+| High              |      57 |

@@ -1,0 +1,8 @@
+Entity Category,Total Extracted,Records Present,% of Dataset,Mean Per Record,Max Per Record
+CVE Identifiers,1,1,0.09%,0.0,1
+Indicators of Compromise (IOCs),1979,1101,100.0%,1.8,3
+Malware / Ransomware Instances,551,551,50.05%,0.5,1
+Threat Actors,824,824,74.84%,0.75,1
+Attack Techniques / Vectors,0,0,0.0%,0.0,0
+Vulnerability References,1,1,0.09%,0.0,1
+Security Keywords,1307,921,83.65%,1.19,3

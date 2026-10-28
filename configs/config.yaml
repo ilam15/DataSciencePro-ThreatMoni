@@ -1,0 +1,38 @@
+project_name: "ThreatMoni"
+version: "1.0.0"
+description: "OSINT Web Mining Framework for Threat Horizon Scanning"
+
+data:
+  raw_path: "data/raw/cybersecurity_dataset.csv"
+  processed_path: "data/processed/cleaned_dataset.csv"
+  features_path: "data/processed/threatmoni_features.csv"
+  primary_dataset_filename: "cybersecurity_dataset.csv"
+  cyberbert_dataset_filename: "cyberbert.csv"
+
+preprocessing:
+  remove_duplicates: true
+  text_columns: ["Cleaned Threat Description"]
+  categorical_columns: ["Threat Category", "Threat Actor", "Attack Vector", "Geographical Location", "Suggested Defense Mechanism"]
+  numerical_columns: ["Sentiment in Forums", "Severity Score", "Risk Level Prediction", "Word Count"]
+  target_candidate: "Threat Category"
+
+ml:
+  random_seed: 42
+  test_size: 0.2
+  stratify: true
+  models:
+    - LogisticRegression
+    - DecisionTree
+    - RandomForest
+    - SVM
+    - NaiveBayes
+    - XGBoost
+
+outputs:
+  base_dir: "outputs"
+  figures_dir: "outputs/figures"
+  tables_dir: "outputs/tables"
+  models_dir: "outputs/models"
+  reports_dir: "outputs/reports"
+  predictions_dir: "outputs/predictions"
+  excel_workbook: "outputs/ThreatMoni_Results.xlsx"

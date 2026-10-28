@@ -1,0 +1,149 @@
+{
+    "dataset_name": "cybersecurity_dataset.csv",
+    "num_rows": 1101,
+    "num_columns": 15,
+    "column_names": [
+        "Threat Category",
+        "IOCs (Indicators of Compromise)",
+        "Threat Actor",
+        "Attack Vector",
+        "Geographical Location",
+        "Sentiment in Forums",
+        "Severity Score",
+        "Predicted Threat Category",
+        "Suggested Defense Mechanism",
+        "Risk Level Prediction",
+        "Cleaned Threat Description",
+        "Keyword Extraction",
+        "Named Entities (NER)",
+        "Topic Modeling Labels",
+        "Word Count"
+    ],
+    "data_types": {
+        "Threat Category": "str",
+        "IOCs (Indicators of Compromise)": "str",
+        "Threat Actor": "str",
+        "Attack Vector": "str",
+        "Geographical Location": "str",
+        "Sentiment in Forums": "float64",
+        "Severity Score": "int64",
+        "Predicted Threat Category": "str",
+        "Suggested Defense Mechanism": "str",
+        "Risk Level Prediction": "int64",
+        "Cleaned Threat Description": "str",
+        "Keyword Extraction": "str",
+        "Named Entities (NER)": "str",
+        "Topic Modeling Labels": "str",
+        "Word Count": "int64"
+    },
+    "missing_values": {
+        "Threat Category": 0,
+        "IOCs (Indicators of Compromise)": 0,
+        "Threat Actor": 0,
+        "Attack Vector": 0,
+        "Geographical Location": 0,
+        "Sentiment in Forums": 0,
+        "Severity Score": 0,
+        "Predicted Threat Category": 0,
+        "Suggested Defense Mechanism": 0,
+        "Risk Level Prediction": 0,
+        "Cleaned Threat Description": 0,
+        "Keyword Extraction": 0,
+        "Named Entities (NER)": 0,
+        "Topic Modeling Labels": 0,
+        "Word Count": 0
+    },
+    "missing_percentage": {
+        "Threat Category": 0.0,
+        "IOCs (Indicators of Compromise)": 0.0,
+        "Threat Actor": 0.0,
+        "Attack Vector": 0.0,
+        "Geographical Location": 0.0,
+        "Sentiment in Forums": 0.0,
+        "Severity Score": 0.0,
+        "Predicted Threat Category": 0.0,
+        "Suggested Defense Mechanism": 0.0,
+        "Risk Level Prediction": 0.0,
+        "Cleaned Threat Description": 0.0,
+        "Keyword Extraction": 0.0,
+        "Named Entities (NER)": 0.0,
+        "Topic Modeling Labels": 0.0,
+        "Word Count": 0.0
+    },
+    "duplicate_records": 0,
+    "unique_values": {
+        "Threat Category": 4,
+        "IOCs (Indicators of Compromise)": 6,
+        "Threat Actor": 5,
+        "Attack Vector": 3,
+        "Geographical Location": 5,
+        "Sentiment in Forums": 51,
+        "Severity Score": 5,
+        "Predicted Threat Category": 4,
+        "Suggested Defense Mechanism": 5,
+        "Risk Level Prediction": 5,
+        "Cleaned Threat Description": 6,
+        "Keyword Extraction": 6,
+        "Named Entities (NER)": 6,
+        "Topic Modeling Labels": 4,
+        "Word Count": 40
+    },
+    "numerical_columns": [
+        "Sentiment in Forums",
+        "Severity Score",
+        "Risk Level Prediction",
+        "Word Count"
+    ],
+    "categorical_columns": [
+        "Threat Category",
+        "IOCs (Indicators of Compromise)",
+        "Threat Actor",
+        "Attack Vector",
+        "Geographical Location",
+        "Predicted Threat Category",
+        "Suggested Defense Mechanism",
+        "Cleaned Threat Description",
+        "Keyword Extraction",
+        "Named Entities (NER)",
+        "Topic Modeling Labels"
+    ],
+    "text_columns": [
+        "Cleaned Threat Description",
+        "Keyword Extraction"
+    ],
+    "date_time_columns": [
+        "Sentiment in Forums"
+    ],
+    "semantic_candidates": {
+        "potential_target_columns": [
+            "Threat Category",
+            "Predicted Threat Category",
+            "Topic Modeling Labels"
+        ],
+        "potential_source_columns": [
+            "Geographical Location"
+        ],
+        "potential_severity_columns": [
+            "Severity Score",
+            "Risk Level Prediction"
+        ],
+        "potential_threat_category_columns": [
+            "Threat Category",
+            "Predicted Threat Category",
+            "Topic Modeling Labels"
+        ],
+        "potential_cve_columns": [],
+        "potential_malware_columns": [],
+        "potential_attack_technique_columns": [
+            "Attack Vector"
+        ],
+        "potential_ioc_columns": [
+            "IOCs (Indicators of Compromise)",
+            "Cleaned Threat Description"
+        ],
+        "potential_organization_product_columns": [
+            "Threat Actor",
+            "Named Entities (NER)"
+        ]
+    }
+}

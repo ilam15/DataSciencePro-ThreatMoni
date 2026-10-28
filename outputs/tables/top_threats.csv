@@ -1,0 +1,5 @@
+Threat Category,Total_Count,Mean_TPI,Max_TPI,Critical_Count,High_Count,Mean_Severity
+Phishing,296,34.15,61.17,0,14,2.92
+Malware,294,33.56,63.1,0,15,3.03
+Ransomware,257,33.23,55.14,0,11,2.97
+DDoS,254,33.18,57.52,0,17,3.04

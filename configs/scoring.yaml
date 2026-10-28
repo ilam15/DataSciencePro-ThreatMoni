@@ -1,0 +1,31 @@
+# ThreatMoni Scoring Configuration
+
+tcs_parameters:
+  alpha: 0.5  # Weight for Source Credibility Score (SCS)
+  beta: 0.5   # Weight for Intelligence Quality (IQ)
+
+scs_parameters:
+  # SCS = (R + U + C + A) / 4
+  default_reliability: 0.75
+  default_authority: 0.80
+  default_consistency: 0.85
+  default_update_freq: 0.70
+
+trs_weights:
+  severity_score: 0.30
+  tfs: 0.25
+  risk_level_prediction: 0.20
+  ioc_count: 0.15
+  forum_sentiment: 0.10
+
+tpi_thresholds:
+  low_max: 25.0
+  medium_max: 50.0
+  high_max: 75.0
+  critical_max: 100.0
+
+threat_priority_labels:
+  - "Low"
+  - "Medium"
+  - "High"
+  - "Critical"

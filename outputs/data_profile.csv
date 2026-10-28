@@ -1,0 +1,16 @@
+column_name,data_type,missing_count,missing_pct,unique_count,sample_val
+Threat Category,str,0,0.0,4,DDoS
+IOCs (Indicators of Compromise),str,0,0.0,6,['123.456.78.9']
+Threat Actor,str,0,0.0,5,APT-28
+Attack Vector,str,0,0.0,3,Email
+Geographical Location,str,0,0.0,5,North Korea
+Sentiment in Forums,float64,0,0.0,51,0.99
+Severity Score,int64,0,0.0,5,5
+Predicted Threat Category,str,0,0.0,4,DDoS
+Suggested Defense Mechanism,str,0,0.0,5,Increase Web Security
+Risk Level Prediction,int64,0,0.0,5,4
+Cleaned Threat Description,str,0,0.0,6,ransomware attack through network vulnerability
+Keyword Extraction,str,0,0.0,6,"['malware', 'email', 'attachment']"
+Named Entities (NER),str,0,0.0,6,"['CompanyY', 'Malware']"
+Topic Modeling Labels,str,0,0.0,4,Malware
+Word Count,int64,0,0.0,40,47
